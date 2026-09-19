@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "ccs2g.pai50288.uk",
-      "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "185.113.223.183",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,7 +20,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/pai50288"
+        "path": "/channels/act",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
       }
     },
     {
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
