@@ -15,7 +15,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /bt/image/categories?ed=2560fp=chrome
+    path: /bt/image/categories
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
