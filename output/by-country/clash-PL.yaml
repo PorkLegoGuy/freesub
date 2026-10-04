@@ -5,14 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: cheerful-swan.rooster465.autos
+  server: 70.34.255.101
+  port: 80
+  udp: true
+  type: vless
+  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: 202.78.163.237
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 50.7.249.155
   port: 443
   udp: true
@@ -23,8 +32,8 @@ proxies:
   servername: poland-good.failspace.top
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 50.7.249.138
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: polkadotnewone.failspace.top
   port: 443
   udp: true
   type: vless
@@ -33,8 +42,8 @@ proxies:
   tls: true
   servername: polkadotnewone.failspace.top
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 50.7.249.98
   port: 443
   udp: true
@@ -54,6 +63,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +73,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
+  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
